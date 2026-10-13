@@ -12,3 +12,131 @@
 .vision-section{display:flex;gap:28px;align-items:center;padding-top:72px;padding-bottom:72px}.vision-mark{width:75px;height:75px;flex-shrink:0;border-radius:22px;font-size:30px}.vision-mark span{font-size:12px;right:8px;bottom:10px}.vision-text h2{font-size:clamp(28px,3.2vw,40px)}.vision-text p{max-width:730px;font-size:12px;color:var(--muted);margin:15px 0 0}.site-footer{background:#f5ede3;border-top:1px solid #e8dbcb}.footer-main{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:28px;padding-bottom:24px}.footer-main>p{font-family:"Playfair Display",serif;font-style:italic;font-size:14px;color:#8c6a4b}.back-top{font-size:11px;font-weight:700;color:var(--brown)}.footer-bottom{display:flex;justify-content:space-between;gap:15px;border-top:1px solid #e2d4c4;padding-top:15px;padding-bottom:17px;font-size:9px;color:#8a7c6d}
 @media(max-width:900px){.site-header nav{gap:15px}.site-header nav a{font-size:11px}.brand{min-width:190px}.header-cta{padding:10px}.search-panel{grid-template-columns:1fr;gap:15px}.smart-layout,.join-layout{gap:35px}.business-section{gap:45px}.listing-grid{grid-template-columns:repeat(2,1fr)}.hero-side-note{right:15px}.section{padding-top:75px;padding-bottom:75px}}
 @media(max-width:680px){.wrap{width:calc(100% - 32px)}.announcement{font-size:9px;flex-wrap:wrap;gap:6px}.announcement-tag{font-size:8px}.site-header{height:70px;padding:0 16px}.brand{min-width:0}.brand-mark{width:39px;height:39px}.brand-copy strong{font-size:15px}.brand-copy small{font-size:7px}.menu-toggle{display:block;margin-left:auto;margin-right:12px}.site-header nav{display:none;position:absolute;top:69px;left:0;right:0;padding:18px 22px;background:#fffdf9;box-shadow:0 15px 25px #2b160d15;flex-direction:column;align-items:flex-start;gap:17px}.site-header nav.open{display:flex}.header-cta{font-size:10px;padding:10px}.hero{min-height:610px;background-position:57% center}.hero-content{width:calc(100% - 34px);padding:65px 0 120px}.hero h1{font-size:47px}.hero-lede{font-size:13px;max-width:400px}.hero-side-note{display:none}.hero-bottom{padding:15px 17px}.hero-bottom div{padding:0 15px;gap:7px}.hero-bottom strong{font-size:18px}.hero-bottom span{font-size:9px}.search-panel{width:calc(100% - 28px);padding:20px;margin-top:-28px}.search-intro h2{font-size:21px}.search-form{grid-template-columns:1fr 1fr}.search-field:first-child{grid-column:1/-1}.search-button{grid-column:1/-1}.section{padding-top:62px;padding-bottom:62px}.section-heading{display:block}.section-heading h2{font-size:39px}.section-heading>p{margin-top:17px}.listing-grid{grid-template-columns:1fr}.place-image{height:210px}.feature-card{min-height:300px}.smart-section{padding:62px 0}.smart-layout{grid-template-columns:1fr;gap:30px}.smart-copy h2,.join-layout h2{font-size:39px}.planner-card{padding:20px}.form-two{grid-template-columns:1fr 1fr}.business-section{grid-template-columns:1fr;gap:35px}.business-image{height:320px}.business-copy h2{font-size:38px}.join-section{padding:60px 0}.join-layout{grid-template-columns:1fr;gap:25px}.join-form{padding:20px}.vision-section{align-items:flex-start;gap:17px;padding-top:55px;padding-bottom:55px}.vision-mark{width:55px;height:55px;font-size:22px;border-radius:16px}.vision-mark span{font-size:9px;right:5px;bottom:7px}.vision-text h2{font-size:28px}.footer-main{flex-wrap:wrap}.footer-main>p{order:3;width:100%;margin:0}.footer-bottom{flex-direction:column;gap:7px}.place-meta{font-size:8px}}
+
+/* Floating WhatsApp and Email Buttons */
+.floating-contact {
+  position: fixed;
+  right: 20px;
+  bottom: 25px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.floating-btn {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.22);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.floating-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.28);
+}
+
+.floating-btn svg {
+  width: 28px;
+  height: 28px;
+}
+
+.whatsapp-btn {
+  background: #25D366;
+  color: #ffffff;
+}
+
+.email-btn {
+  background: #713f20;
+  color: #ffffff;
+}
+
+/* Contact Section */
+.contact-section {
+  padding-top: 55px;
+  padding-bottom: 55px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  margin: 12px 0;
+}
+
+.contact-section > p {
+  max-width: 600px;
+  margin: 0 auto 25px;
+  line-height: 1.7;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.contact-details a {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px 24px;
+  min-width: 220px;
+  border: 1px solid #ead9c9;
+  border-radius: 14px;
+  background: #fffaf4;
+  color: #6c3516;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+  transition: transform 0.2s ease;
+}
+
+.contact-details a:hover {
+  transform: translateY(-3px);
+}
+
+.contact-details a strong {
+  font-size: 16px;
+}
+
+.contact-details a span {
+  font-size: 14px;
+}
+
+/* Mobile Display */
+@media (max-width: 600px) {
+  .floating-contact {
+    right: 12px;
+    bottom: 18px;
+  }
+
+  .floating-btn {
+    width: 48px;
+    height: 48px;
+  }
+
+  .contact-details {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .contact-details a {
+    min-width: 0;
+  }
+}
+
+/* Website Creator Credit */
+.creator-credit {
+  color: #f0d7bc;
+  font-size: 13px;
+  letter-spacing: 0.3px;
+}
+
+.creator-credit strong {
+  color: #ffffff;
+  font-weight: 700;
+}
