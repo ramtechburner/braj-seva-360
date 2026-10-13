@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#6c3516">
+  <title>Braj Seva 360 | Explore Braj. Discover Local.</title>
+  <meta name="description" content="Discover local businesses, plan a Braj visit, and help local businesses grow digitally.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement"><span class="dot"></span> A digital doorway to the Braj region <span class="announcement-tag">CONCEPT PROTOTYPE</span></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Braj Seva 360 home">
+      <span class="brand-mark">B<span>360</span></span>
+      <span class="brand-copy"><strong data-brand>Braj Seva 360</strong><small>LOCAL DISCOVERY · SMART YATRA</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+    <nav id="mainNav">
+      <a href="#discover">Explore Braj</a>
+      <a href="#smart-yatra">Smart Yatra</a>
+      <a href="#business">For Businesses</a>
+      <a href="#about">Our Vision</a>
+    </nav>
+    <a class="header-cta" href="#discover">Start Exploring <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="eyebrow light-eyebrow"><span>✦</span> DISCOVER THE SOUL OF BRAJ</div>
+        <h1>More than a visit.<br><em>Feel the Braj.</em></h1>
+        <p class="hero-lede">Find meaningful places, trusted local services and little discoveries that make your journey special — all in one place.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#discover">Explore local places <span>→</span></a>
+          <a class="btn btn-glass" href="#smart-yatra">Plan my Braj visit</a>
+        </div>
+        <div class="hero-proof"><span class="proof-icon">✧</span><span>Built around local culture, community and discovery</span></div>
+      </div>
+      <div class="hero-side-note"><span class="vertical-line"></span><span>MATHURA · VRINDAVAN · BRAJ</span></div>
+      <div class="hero-bottom">
+        <div><strong>01</strong><span>Discover</span></div>
+        <div><strong>02</strong><span>Plan</span></div>
+        <div><strong>03</strong><span>Connect local</span></div>
+      </div>
+    </section>
+
+    <section class="search-panel wrap" aria-label="Search local places">
+      <div class="search-intro"><span class="mini-label">YOUR BRAJ, YOUR WAY</span><h2>What are you looking for?</h2></div>
+      <form id="searchForm" class="search-form">
+        <label class="search-field"><span>I'm looking for</span>
+          <select id="categoryFilter" aria-label="Choose a category">
+            <option value="all">Everything in Braj</option>
+            <option value="temple">Temples & darshan</option>
+            <option value="stay">Hotels & stays</option>
+            <option value="food">Food & refreshments</option>
+            <option value="shopping">Local shopping</option>
+            <option value="service">Local services</option>
+          </select>
+        </label>
+        <label class="search-field location-field"><span>Area</span>
+          <select id="areaFilter" aria-label="Choose an area">
+            <option value="all">All Braj</option>
+            <option value="Vrindavan">Vrindavan</option>
+            <option value="Mathura">Mathura</option>
+            <option value="Govardhan">Govardhan</option>
+            <option value="Barsana">Barsana</option>
+          </select>
+        </label>
+        <button class="btn btn-dark search-button" type="submit">Find places <span>⌕</span></button>
+      </form>
+    </section>
+
+    <section class="section wrap" id="discover">
+      <div class="section-heading">
+        <div><div class="eyebrow"><span>✦</span> MADE FOR CURIOUS TRAVELLERS</div><h2>Discover your kind<br>of <em>Braj experience.</em></h2></div>
+        <p>From sacred stops to local flavours, find inspiration for your next moment in Braj.</p>
+      </div>
+      <div class="category-row">
+        <button class="category-chip active" data-category="all">All places</button>
+        <button class="category-chip" data-category="temple">Temples</button>
+        <button class="category-chip" data-category="stay">Stay</button>
+        <button class="category-chip" data-category="food">Food</button>
+        <button class="category-chip" data-category="shopping">Shopping</button>
+        <button class="category-chip" data-category="service">Services</button>
+      </div>
+      <div class="listing-grid" id="listingGrid">
+        <article class="place-card" data-category="temple" data-area="Vrindavan">
+          <div class="place-image image-temple"><span class="image-label">SPIRITUAL LANDMARK</span><button class="save-button" aria-label="Save place">♡</button></div>
+          <div class="place-body"><div class="place-meta"><span>✦ Temple & Darshan</span><span>Vrindavan</span></div><h3>Explore Vrindavan’s sacred places</h3><p>Plan your day around spiritual landmarks and local visitor information.</p><a class="text-link" href="#smart-yatra">Plan a visit <span>↗</span></a></div>
+        </article>
+        <article class="place-card" data-category="food" data-area="Mathura">
+          <div class="place-image image-food"><span class="image-label">LOCAL FLAVOURS</span><button class="save-button" aria-label="Save place">♡</button></div>
+          <div class="place-body"><div class="place-meta"><span>✦ Food & Refreshments</span><span>Mathura</span></div><h3>Find a taste of local Braj</h3><p>Discover food spots and refreshments around your route.</p><a class="text-link" href="#discover">Explore food <span>↗</span></a></div>
+        </article>
+        <article class="place-card" data-category="stay" data-area="Vrindavan">
+          <div class="place-image image-stay"><span class="image-label">STAY WITH EASE</span><button class="save-button" aria-label="Save place">♡</button></div>
+          <div class="place-body"><div class="place-meta"><span>✦ Hotels & Guest Houses</span><span>Vrindavan</span></div><h3>Explore places to stay</h3><p>Compare local accommodation information and contact providers directly.</p><a class="text-link" href="#business">List a stay <span>↗</span></a></div>
+        </article>
+        <article class="place-card" data-category="shopping" data-area="Govardhan">
+          <div class="place-image image-shopping"><span class="image-label">SUPPORT LOCAL</span><button class="save-button" aria-label="Save place">♡</button></div>
+          <div class="place-body"><div class="place-meta"><span>✦ Local Shopping</span><span>Govardhan</span></div><h3>Discover local shops & makers</h3><p>Find useful shops and support the people who make the local economy thrive.</p><a class="text-link" href="#business">Discover local <span>↗</span></a></div>
+        </article>
+        <article class="place-card" data-category="service" data-area="Barsana">
+          <div class="place-image image-service"><span class="image-label">LOCAL HELP</span><button class="save-button" aria-label="Save place">♡</button></div>
+          <div class="place-body"><div class="place-meta"><span>✦ Local Services</span><span>Barsana</span></div><h3>Find helpful local services</h3><p>A future-ready directory for visitor essentials and local service providers.</p><a class="text-link" href="#business">Explore services <span>↗</span></a></div>
+        </article>
+        <article class="place-card feature-card">
+          <div class="feature-card-inner"><span class="feature-icon">✳</span><span class="mini-label">YOUR NEXT DISCOVERY</span><h3>Let your time in Braj become a story.</h3><p>Build a simple plan around your time, interests and travel style.</p><a class="btn btn-light" href="#smart-yatra">Try Smart Yatra <span>→</span></a></div>
+        </article>
+      </div>
+      <p class="prototype-note"><strong>Prototype note:</strong> The cards above are illustrative examples, not verified listings. Real business details, opening hours and availability must be confirmed before launch.</p>
+      <div id="emptyState" class="empty-state" hidden>No sample cards match those filters. Try another category or area.</div>
+    </section>
+
+    <section class="smart-section" id="smart-yatra">
+      <div class="smart-bg"></div>
+      <div class="wrap smart-layout">
+        <div class="smart-copy">
+          <div class="eyebrow light-eyebrow"><span>✦</span> YOUR PERSONAL BRAJ COMPANION</div>
+          <h2>Make a plan.<br><em>Leave room for wonder.</em></h2>
+          <p>Tell us how much time you have and what matters most. This demo creates a simple suggested itinerary — a starting point for your journey, not a live route or crowd forecast.</p>
+          <div class="smart-benefits"><span>✓ Simple planning</span><span>✓ Interest-based suggestions</span><span>✓ Local discovery</span></div>
+        </div>
+        <div class="planner-card">
+          <div class="planner-top"><div><span class="mini-label">BRAJ SMART YATRA</span><h3>Your visit, your pace.</h3></div><span class="planner-symbol">✺</span></div>
+          <form id="plannerForm">
+            <label>Where would you like to begin?
+              <select id="plannerArea"><option>Vrindavan</option><option>Mathura</option><option>Govardhan</option><option>Barsana</option></select>
+            </label>
+            <div class="form-two">
+              <label>Time available
+                <select id="plannerTime"><option value="3">About 3 hours</option><option value="6" selected>About 6 hours</option><option value="10">A full day</option></select>
+              </label>
+              <label>Travel style
+                <select id="plannerStyle"><option value="spiritual">Spiritual & peaceful</option><option value="family">Family-friendly</option><option value="food">Food & local culture</option><option value="mixed">A little of everything</option></select>
+              </label>
+            </div>
+            <button class="btn btn-primary full-width" type="submit">Create my sample plan <span>→</span></button>
+          </form>
+          <div id="itineraryResult" class="itinerary-result" hidden aria-live="polite"></div>
+          <p class="small-disclaimer">Please verify temple timings, transport, access and local conditions independently.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="business-section section wrap" id="business">
+      <div class="business-visual">
+        <div class="business-image"></div>
+        <div class="floating-stat"><span class="stat-mark">↗</span><div><strong>Be easier to find.</strong><small>Build your digital presence</small></div></div>
+      </div>
+      <div class="business-copy">
+        <div class="eyebrow"><span>✦</span> GROW WITH BRAJ</div>
+        <h2>Your business deserves<br>a <em>digital doorway.</em></h2>
+        <p>We want to help local shops, stays, eateries and service providers become easier to discover online — with clear profiles, useful content and direct customer enquiries.</p>
+        <ul class="check-list"><li>Local business profile and contact details</li><li>Digital marketing and local SEO support</li><li>AI-assisted content ideas for human review</li><li>Future options for verified enquiries and bookings</li></ul>
+        <a class="btn btn-dark" href="#join">Register interest <span>→</span></a>
+      </div>
+    </section>
+
+    <section class="join-section" id="join">
+      <div class="wrap join-layout">
+        <div><div class="eyebrow light-eyebrow"><span>✦</span> HELP US BUILD IT BETTER</div><h2>Local roots.<br><em>Shared growth.</em></h2><p>Are you a visitor, local business owner or community partner? Tell us what would make Braj easier to explore and local businesses easier to discover.</p></div>
+        <form class="join-form" id="joinForm">
+          <label>Your name<input id="joinName" type="text" placeholder="Enter your name" required></label>
+          <label>I am a...
+            <select id="joinRole"><option>Tourist / Pilgrim</option><option>Local business owner</option><option>Guide / Service provider</option><option>Community / Institution</option></select>
+          </label>
+          <label>What would help you most?<textarea id="joinNeed" rows="3" placeholder="Share a feature or need..." required></textarea></label>
+          <button class="btn btn-primary full-width" type="submit">Prepare my feedback <span>→</span></button>
+          <p class="form-note">Demo only: this form opens a draft message in your email app. It does not send or store data on a server.</p>
+          <div id="joinMessage" class="form-message" hidden></div>
+        </form>
+      </div>
+    </section>
+
+    <section class="vision-section wrap section" id="about">
+      <div class="vision-mark">B<span>360</span></div>
+      <div class="vision-text"><div class="eyebrow"><span>✦</span> OUR VISION</div><h2>A more connected, discoverable<br>and digitally empowered <em>Braj.</em></h2><p>Our vision is to bring local businesses and visitors closer through useful technology, thoughtful discovery and tools that make digital growth more accessible.</p></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-main">
+      <a class="brand footer-brand" href="#home"><span class="brand-mark">B<span>360</span></span><span class="brand-copy"><strong data-brand>Braj Seva 360</strong><small>LOCAL DISCOVERY · SMART YATRA</small></span></a>
+      <p>Explore Braj. Discover Local. Experience More.</p>
+      <a href="#home" class="back-top">Back to top ↑</a>
+    </div>
+    <div class="wrap footer-bottom"><span>© <span id="year"></span> <span data-brand>Braj Seva 360</span> · Concept prototype</span><span>Illustrative demo — not an operational booking service.</span></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
