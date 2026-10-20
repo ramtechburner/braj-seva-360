@@ -140,3 +140,93 @@
   color: #ffffff;
   font-weight: 700;
 }
+
+/* Founder Section Layout */
+.founder-section {
+    padding: 60px 20px;
+}
+
+.founder-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+/* Founder Photo */
+.founder-image {
+    flex: 0 0 220px;
+}
+
+.founder-image img {
+    width: 220px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 14px;
+}
+
+/* Founder Bio */
+.founder-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.founder-label {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #d97706;
+    margin-bottom: 8px;
+}
+
+.founder-content h2 {
+    font-size: 30px;
+    margin: 0 0 8px;
+}
+
+.founder-content h3 {
+    font-size: 17px;
+    margin: 0 0 16px;
+}
+
+.founder-content p {
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.founder-socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.founder-socials a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .founder-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 22px;
+    }
+
+    .founder-image {
+        flex: none;
+    }
+
+    .founder-image img {
+        width: 160px;
+        height: 180px;
+    }
+
+    .founder-content h2 {
+        font-size: 25px;
+    }
+}
