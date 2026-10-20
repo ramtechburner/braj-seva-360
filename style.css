@@ -430,3 +430,459 @@
         height: 230px;
     }
 }
+
+/* ===== OUR CLIENTS PAGE ===== */
+
+.clients-header {
+    text-align: center;
+    padding: 55px 20px;
+    background: linear-gradient(135deg, #fff0d9, #ffffff);
+    color: #422b1b;
+}
+
+.back-home {
+    display: inline-block;
+    color: #a4510a;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.clients-eyebrow {
+    color: #b45309;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.clients-header h1 {
+    font-size: clamp(32px, 5vw, 48px);
+    margin: 10px 0;
+}
+
+.clients-header > p:last-child {
+    line-height: 1.7;
+    margin: 0 auto;
+    max-width: 650px;
+}
+
+.clients-page {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 45px 20px 60px;
+}
+
+.client-section,
+.client-video-section {
+    margin-bottom: 65px;
+}
+
+.clients-section-heading {
+    text-align: center;
+    margin: 0 auto 30px;
+    max-width: 700px;
+}
+
+.clients-section-heading h2 {
+    font-size: clamp(25px, 4vw, 34px);
+    color: #30251c;
+    margin: 8px 0 12px;
+}
+
+.clients-section-heading > p:last-child {
+    color: #666;
+    line-height: 1.7;
+}
+
+/* Client cards */
+
+.clients-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.client-card {
+    min-width: 0;
+    border: 1px solid #ececec;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.client-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.10);
+}
+
+.client-card > img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    background: #f5f5f5;
+}
+
+.client-card-content {
+    padding: 20px;
+}
+
+.client-category {
+    display: inline-block;
+    color: #a4510a;
+    background: #fff4e5;
+    padding: 7px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+.client-card-content h3 {
+    color: #29231f;
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 15px 0 10px;
+}
+
+.client-stars {
+    color: #85501b;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.client-review {
+    margin: 0;
+    padding-left: 14px;
+    border-left: 3px solid #e9a23b;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.8;
+    font-style: italic;
+}
+
+.review-note {
+    margin-top: 14px;
+    color: #8a5a22;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+/* Client video cards */
+
+.client-videos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.client-video-card {
+    min-width: 0;
+    border: 1px solid #ececec;
+    border-radius: 14px;
+    overflow: hidden;
+    padding-bottom: 16px;
+    background: #fff;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
+}
+
+.client-video-card video {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    background: #171717;
+}
+
+.client-video-card h3 {
+    font-size: 17px;
+    line-height: 1.5;
+    margin: 15px 16px 6px;
+}
+
+.client-video-card p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #666;
+    margin: 0 16px;
+}
+
+/* Footer */
+
+.clients-footer {
+    text-align: center;
+    padding: 25px 20px;
+    background: #241b15;
+    color: #fff;
+}
+
+.clients-footer p {
+    font-size: 13px;
+}
+
+.clients-footer a {
+    color: #ffd49a;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Responsive layout */
+
+@media (max-width: 850px) {
+    .clients-grid,
+    .client-videos-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 560px) {
+    .clients-page {
+        padding: 30px 15px 45px;
+    }
+
+    .clients-grid,
+    .client-videos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .client-card > img {
+        height: 230px;
+    }
+
+    .clients-header {
+        padding: 40px 18px;
+    }
+}
+
+/* ===== OUR CLIENTS PAGE ===== */
+
+.clients-header {
+    text-align: center;
+    padding: 55px 20px;
+    background: linear-gradient(135deg, #fff0d9, #ffffff);
+    color: #422b1b;
+}
+
+.back-home {
+    display: inline-block;
+    color: #a4510a;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.clients-eyebrow {
+    color: #b45309;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.clients-header h1 {
+    font-size: clamp(32px, 5vw, 48px);
+    margin: 10px 0;
+}
+
+.clients-header > p:last-child {
+    line-height: 1.7;
+    margin: 0 auto;
+    max-width: 650px;
+}
+
+.clients-page {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 45px 20px 60px;
+}
+
+.client-section,
+.client-video-section {
+    margin-bottom: 65px;
+}
+
+.clients-section-heading {
+    text-align: center;
+    margin: 0 auto 30px;
+    max-width: 700px;
+}
+
+.clients-section-heading h2 {
+    font-size: clamp(25px, 4vw, 34px);
+    color: #30251c;
+    margin: 8px 0 12px;
+}
+
+.clients-section-heading > p:last-child {
+    color: #666;
+    line-height: 1.7;
+}
+
+/* Client cards */
+
+.clients-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.client-card {
+    min-width: 0;
+    border: 1px solid #ececec;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.client-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.10);
+}
+
+.client-card > img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    background: #f5f5f5;
+}
+
+.client-card-content {
+    padding: 20px;
+}
+
+.client-category {
+    display: inline-block;
+    color: #a4510a;
+    background: #fff4e5;
+    padding: 7px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+.client-card-content h3 {
+    color: #29231f;
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 15px 0 10px;
+}
+
+.client-stars {
+    color: #85501b;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.client-review {
+    margin: 0;
+    padding-left: 14px;
+    border-left: 3px solid #e9a23b;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.8;
+    font-style: italic;
+}
+
+.review-note {
+    margin-top: 14px;
+    color: #8a5a22;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+/* Client video cards */
+
+.client-videos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.client-video-card {
+    min-width: 0;
+    border: 1px solid #ececec;
+    border-radius: 14px;
+    overflow: hidden;
+    padding-bottom: 16px;
+    background: #fff;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
+}
+
+.client-video-card video {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    background: #171717;
+}
+
+.client-video-card h3 {
+    font-size: 17px;
+    line-height: 1.5;
+    margin: 15px 16px 6px;
+}
+
+.client-video-card p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #666;
+    margin: 0 16px;
+}
+
+/* Footer */
+
+.clients-footer {
+    text-align: center;
+    padding: 25px 20px;
+    background: #241b15;
+    color: #fff;
+}
+
+.clients-footer p {
+    font-size: 13px;
+}
+
+.clients-footer a {
+    color: #ffd49a;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Responsive layout */
+
+@media (max-width: 850px) {
+    .clients-grid,
+    .client-videos-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 560px) {
+    .clients-page {
+        padding: 30px 15px 45px;
+    }
+
+    .clients-grid,
+    .client-videos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .client-card > img {
+        height: 230px;
+    }
+
+    .clients-header {
+        padding: 40px 18px;
+    }
+}
