@@ -230,3 +230,203 @@
         font-size: 25px;
     }
 }
+
+/* ===== Braj Seva 360 Dropdown Menu ===== */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    background: transparent;
+    border: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.dropdown-arrow {
+    transition: transform 0.2s ease;
+}
+
+/* Dropdown menu design */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 210px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    padding: 8px;
+    z-index: 9999;
+}
+
+/* Dropdown links */
+.dropdown-menu a {
+    display: block;
+    padding: 11px 12px;
+    color: #222222;
+    text-decoration: none;
+    border-radius: 6px;
+    white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+    background: #fff0d9;
+    color: #b45309;
+}
+
+/* Mouse hover se open */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Click se open */
+.dropdown.is-open .dropdown-menu {
+    display: block;
+}
+
+.dropdown.is-open .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+/* Keyboard focus */
+.dropdown-toggle:focus-visible,
+.dropdown-menu a:focus-visible {
+    outline: 2px solid #d97706;
+    outline-offset: 2px;
+}
+
+/* Mobile par menu ko screen ke andar rakho */
+@media (max-width: 600px) {
+    .dropdown-menu {
+        min-width: 190px;
+        max-width: calc(100vw - 40px);
+    }
+}
+
+/* Explore Braj Dropdown */
+.dropdown-menu a {
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.dropdown-menu a:active {
+    background: #ffe4bd;
+}
+
+/* Many options ko screen ke andar rakho */
+.dropdown-menu {
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+/* Mobile-friendly dropdown */
+@media (max-width: 600px) {
+    .dropdown-menu {
+        min-width: 190px;
+        max-width: calc(100vw - 32px);
+    }
+
+    .dropdown-menu a {
+        padding: 12px;
+    }
+}
+
+/* ===== Our Clients Page ===== */
+
+.clients-header {
+    text-align: center;
+    padding: 55px 20px;
+    background: linear-gradient(135deg, #fff0d9, #ffffff);
+    color: #422b1b;
+}
+
+.clients-header h1 {
+    font-size: clamp(30px, 5vw, 46px);
+    margin: 20px 0 10px;
+}
+
+.clients-header p {
+    line-height: 1.7;
+}
+
+.back-home {
+    color: #a4510a;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.clients-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 35px 20px 60px;
+}
+
+.clients-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.client-card {
+    border: 1px solid #eeeeee;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #ffffff;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+}
+
+.client-card img {
+    display: block;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.client-card-content {
+    padding: 18px;
+}
+
+.client-card-content h2 {
+    font-size: 20px;
+    margin: 0 0 8px;
+}
+
+.client-category {
+    color: #a4510a;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.client-review {
+    line-height: 1.7;
+    color: #555555;
+}
+
+.client-stars {
+    color: #d97706;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 750px) {
+    .clients-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 500px) {
+    .clients-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .client-card img {
+        height: 230px;
+    }
+}
