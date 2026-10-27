@@ -83,3 +83,55 @@ document.getElementById("joinForm").addEventListener("submit", event => {
   message.textContent = "Your email draft is ready. Your browser may ask which email app to use; no information has been sent yet.";
   window.location.href = `mailto:?subject=${subject}&body=${body}`;
 });
+
+/* ===== Dropdown Click Functionality ===== */
+
+document.querySelectorAll(".dropdown").forEach((dropdown) => {
+    const button = dropdown.querySelector(".dropdown-toggle");
+
+    if (!button) return;
+
+    button.addEventListener("click", (event) => {
+        event.stopPropagation();
+
+        const willOpen = !dropdown.classList.contains("is-open");
+
+        // Baaki dropdown band karo
+        document.querySelectorAll(".dropdown.is-open").forEach((item) => {
+            item.classList.remove("is-open");
+
+            item.querySelector(".dropdown-toggle")
+                ?.setAttribute("aria-expanded", "false");
+        });
+
+        // Current dropdown ko toggle karo
+        if (willOpen) {
+            dropdown.classList.add("is-open");
+            button.setAttribute("aria-expanded", "true");
+        }
+    });
+});
+
+// Menu ke bahar click karne par band karo
+document.addEventListener("click", (event) => {
+    document.querySelectorAll(".dropdown.is-open").forEach((dropdown) => {
+        if (!dropdown.contains(event.target)) {
+            dropdown.classList.remove("is-open");
+
+            dropdown.querySelector(".dropdown-toggle")
+                ?.setAttribute("aria-expanded", "false");
+        }
+    });
+});
+
+// Escape key se dropdown band karo
+document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+        document.querySelectorAll(".dropdown.is-open").forEach((dropdown) => {
+            dropdown.classList.remove("is-open");
+
+            dropdown.querySelector(".dropdown-toggle")
+                ?.setAttribute("aria-expanded", "false");
+        });
+    }
+});
